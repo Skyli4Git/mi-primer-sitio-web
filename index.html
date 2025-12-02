@@ -1,148 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Control de Calidad - GAS Paint & Detail</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="./logosConectar/logoConectarLabCeleste.png">
-  <link rel="stylesheet" href="./Estilos/globales.css">
-  <title>Conectar LAB</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo2.JPG">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-  <header></header>
-  <main>
 
-    <section class="banner">
-      <div class="banner-description">
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-          officia?
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Perferendis, at minus quos a quae unde. Officiis vel quibusdam sint
-          et! Voluptatum reprehenderit temporibus fugit blanditiis molestias
-          impedit praesentium nobis obcaecati quia quibusdam facere ut harum
-          hic veniam distinctio commodi vel cum fuga, debitis soluta mollitia.
-          Accusantium nam nostrum nemo quod!
-        </p>
-      </div>
-      <img src="./logosConectar/logoConectarLabCeleste.png"   />
-    </section>
+    <div id="save-indicator">💾 Guardado</div>
 
-    <h2 id="images" class="section-title">Imagenes</h2>
-    <section class="carrusel">
-      <div class="carrusel-img"></div>
-      <div class="carrusel-img1"></div>
-      <div class="carrusel-img2"></div>
-    </section>
+    <div class="container">
+        <div class="logo-container">
+            <img src="assets/logo.png" class="logo-screen" alt="Logo" onerror="this.style.display='none'">
+            <img src="assets/logo.jpeg" class="logo-print" alt="Logo Impresión">
+            <div id="print-date-display"></div>
+        </div>
 
-    <h2 id="info" class="section-title">Información</h2>
-    <section class="information">
-      
-      <article class="info-card">
-        <img src="./logosConectar/logoConectarLabRosado.png"   />
-        <div>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates, dolores!
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam
-            doloremque ut consequatur! Hic, minima odit reprehenderit rerum
-            quas iure itaque officia, tempora ea eos obcaecati. Ipsam quo
-            tempora modi.
-          </p>
-        </div>
-      </article>
+        <h1>Control de Calidad - GAS Paint</h1>
 
-      <article class="info-card reverse-flexrow">
-        <img src="./logosConectar/logoConectarLabRosado.png"   />
-        <div>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates, dolores!
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam
-            doloremque ut consequatur! Hic, minima odit reprehenderit rerum
-            quas iure itaque officia, tempora ea eos obcaecati. Ipsam quo
-            tempora modi.
-          </p>
+        <div class="header-info">
+            <div class="form-group">
+                <label>Nº Orden de Trabajo:</label>
+                <input type="text" id="orderNum" class="uppercase-input" placeholder="Ej: OT-2025-001">
+            </div>
+            <div class="form-group">
+                <label>Placa:</label>
+                <input type="text" id="plate" class="uppercase-input" maxlength="9" placeholder="Ej: ABC-1234">
+            </div>
+            <div class="form-group">
+                <label>Marca del Vehículo:</label>
+                <input type="text" id="brand" placeholder="Ej: Toyota"> 
+            </div>
         </div>
-      </article>
-      <article class="info-card">
-        <img src="./logosConectar/logoConectarLabRosado.png"   />
-        <div>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates, dolores!
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam
-            doloremque ut consequatur! Hic, minima odit reprehenderit rerum
-            quas iure itaque officia, tempora ea eos obcaecati. Ipsam quo
-            tempora modi.
-          </p>
-        </div>
-      </article>
-      <article class="info-card reverse-flexrow">
-        <img src="./logosConectar/logoConectarLabRosado.png"   />
-        <div>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates, dolores!
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam
-            doloremque ut consequatur! Hic, minima odit reprehenderit rerum
-            quas iure itaque officia, tempora ea eos obcaecati. Ipsam quo
-            tempora modi.
-          </p>
-        </div>
-      </article>
-      <article class="info-card">
-        <img src="./logosConectar/logoConectarLabRosado.png"   />
-        <div>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates, dolores!
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam
-            doloremque ut consequatur! Hic, minima odit reprehenderit rerum
-            quas iure itaque officia, tempora ea eos obcaecati. Ipsam quo
-            tempora modi.
-          </p>
-        </div>
-      </article>
-      <article class="info-card reverse-flexrow">
-        <img src="./logosConectar/logoConectarLabRosado.png"   />
-        <div>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates, dolores!
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam
-            doloremque ut consequatur! Hic, minima odit reprehenderit rerum
-            quas iure itaque officia, tempora ea eos obcaecati. Ipsam quo
-            tempora modi.
-          </p>
-        </div>
-      </article>
-    </section>
 
-    <section class="contacto"></section>
-  </main>
-  <footer></footer>
+        <div class="section" id="sec-sistema">
+            <div class="section-header">
+                <span><span class="print-hidden-icon">📝</span> <span class="section-index">A.</span> ORDEN DE TRABAJO Y SISTEMA</span>
+                <span class="status-indicator">PENDIENTE</span>
+            </div>
+            <div class="admin-row">
+                <span class="admin-question">1. ¿Se encuentra la Orden de Trabajo finalizada en el Sistema?</span>
+                <div class="input-cluster">
+                    <select id="sys-finalizada">
+                        <option value="" selected disabled hidden>Seleccione...</option><option value="SI">SÍ</option><option value="NO">NO</option>
+                    </select>
+                    <input type="text" id="sys-finalizada-date" class="flat-date" placeholder="DD/MM/YYYY">
+                    <input type="text" id="sys-finalizada-time" class="flat-time" placeholder="HH:MM">
+                </div>
+            </div>
+            <div class="admin-row">
+                <span class="admin-question">2.a. ¿Todos los servicios en la Orden verificables, se ejecutaron?</span>
+                <div class="input-cluster">
+                    <select id="sys-ejecutados">
+                        <option value="" selected disabled hidden>Seleccione...</option><option value="SI">SÍ</option><option value="NO">NO</option>
+                    </select>
+                    <input type="text" id="sys-ejecutados-date" class="flat-date" placeholder="DD/MM/YYYY">
+                    <input type="text" id="sys-ejecutados-time" class="flat-time" placeholder="HH:MM">
+                </div>
+                <div id="devolucion-block" class="highlight-box">
+                    <span class="sub-note">2.b. En caso negativo, devolver a Operaciones.</span>
+                    <div class="input-cluster" style="margin-top:5px;">
+                        <label for="devuelto-date">Devuelto:</label>
+                        <input type="text" id="devuelto-date" class="flat-date" placeholder="DD/MM/YYYY">
+                        <input type="text" id="devuelto-time" class="flat-time" placeholder="HH:MM">
+                    </div>
+                </div>
+                <div id="corregido-block" class="highlight-box">
+                    <span class="sub-note">3. Revisado y corregido.</span>
+                    <div class="input-cluster" style="margin-top:5px;">
+                        <label for="corregido-date">Corregido:</label>
+                        <input type="text" id="corregido-date" class="flat-date" placeholder="DD/MM/YYYY">
+                        <input type="text" id="corregido-time" class="flat-time" placeholder="HH:MM">
+                    </div>
+                    <div id="corregido-error" class="error-text">La fecha de corrección no puede ser anterior a la de devolución.</div>
+                </div>
+            </div>
+            <div class="checklist">
+                <div class="check-item" style="background-color: var(--input-bg); border-radius:4px; padding:10px;">
+                    <input type="checkbox" id="admin-ok">
+                    <label for="admin-ok"><strong>CONFIRMAR:</strong> La revisión administrativa está completa.</label>
+                </div>
+            </div>
+            <div class="obs-area">
+                <label class="form-group">Observaciones:</label>
+                <textarea id="obs-sistema" placeholder="Detalles administrativos..."></textarea>
+            </div>
+        </div>
+
+        <div class="section" id="sec-pintura" data-config-key="pintura">
+            <div class="section-header">
+                <span><span class="print-hidden-icon">🖌️</span> <span class="section-index">B.</span> PINTURA</span>
+                <span class="status-indicator">PENDIENTE</span>
+            </div>
+            <div class="section-progress-bar"><div class="section-progress-fill"></div></div>
+            <div class="checklist"></div> <div class="obs-area">
+                <label class="form-group">Observaciones Pintura:</label>
+                <textarea id="obs-pintura" placeholder="Defectos encontrados..."></textarea>
+            </div>
+        </div>
+
+        <div class="section" id="sec-armado" data-config-key="armado">
+            <div class="section-header">
+                <span><span class="print-hidden-icon">🔩</span> <span class="section-index">C.</span> ARMADO Y AJUSTE</span>
+                <span class="status-indicator">PENDIENTE</span>
+            </div>
+            <div class="section-progress-bar"><div class="section-progress-fill"></div></div>
+            <div class="checklist"></div>
+            <div class="obs-area">
+                <label class="form-group">Observaciones Armado:</label>
+                <textarea id="obs-armado" placeholder="Detalles de ajuste..."></textarea>
+            </div>
+        </div>
+
+        <div class="section" id="sec-pulido" data-config-key="pulido">
+            <div class="section-header">
+                <span><span class="print-hidden-icon">✨</span> <span class="section-index">D.</span> PULIDO Y EXTERIOR</span>
+                <span class="status-indicator">PENDIENTE</span>
+            </div>
+            <div class="section-progress-bar"><div class="section-progress-fill"></div></div>
+            <div class="checklist"></div>
+            <div class="obs-area">
+                <label class="form-group">Observaciones Exterior:</label>
+                <textarea id="obs-pulido" placeholder="Detalles de corrección..."></textarea>
+            </div>
+        </div>
+
+        <div class="section" id="sec-tapiceria" data-config-key="tapiceria">
+            <div class="section-header">
+                <span><span class="print-hidden-icon">🧼</span> <span class="section-index">E.</span> TAPICERÍA E INTERIOR</span>
+                <span class="status-indicator">PENDIENTE</span>
+            </div>
+            <div class="section-progress-bar"><div class="section-progress-fill"></div></div>
+            <div class="checklist"></div>
+            <div class="obs-area">
+                <label class="form-group">Observaciones Interior:</label>
+                <textarea id="obs-interior" placeholder="Detalles de tapicería..."></textarea>
+            </div>
+        </div>
+
+        <div class="section" id="sec-control" data-config-key="control">
+            <div class="section-header">
+                <span><span class="print-hidden-icon">⚙️</span> <span class="section-index">F.</span> CONTROL MECÁNICO</span>
+                <span class="status-indicator">PENDIENTE</span>
+            </div>
+            <div class="section-progress-bar"><div class="section-progress-fill"></div></div>
+            <div class="checklist"></div>
+            <div class="obs-area">
+                <label class="form-group">Observaciones Mecánicas:</label>
+                <textarea id="obs-control" placeholder="Notas mecánicas..."></textarea>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-clear" onclick="limpiarFormulario()">🗑️ Limpiar</button>
+            <button id="btn-print" class="btn-submit" onclick="generarReporte()">🖨️ Finalizar e Imprimir</button>
+        </div>
+        
+        <div class="signature-box">
+            <div>Nombre: __________________________</div>
+            <div>Firma: __________________________</div>
+        </div>
+
+        <div class="footer-info">Versión 2.0.0 (Optimized) - Control de Calidad GAS</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.js"></script> 
+    <script src="js/script.js" defer></script>
 </body>
-<script src="./Funciones/app.js"></script>
 </html>
